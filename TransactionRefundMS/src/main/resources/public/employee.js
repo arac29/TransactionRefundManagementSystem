@@ -1,7 +1,7 @@
 window.onload=function(){
 // ********************* SHOW TABLE WITH REIMBURSEMENTS BY EMPLOYEE ID****/
     let xhr = new XMLHttpRequest();
-    const url = "http://localhost:9094/readReimbursements";
+    const url = "http://52.188.8.54/readReimbursements";
     xhr.onreadystatechange = function () {
         console.log(xhr.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -60,7 +60,7 @@ window.onload=function(){
     xhr.send();
 // ********************* POPULATE TABLE WITH EVENT INFO BY EMPLOYEE ID****/
     let xhr1 = new XMLHttpRequest();
-    const url1 = "http://localhost:9094/readEvents";
+    const url1 = "http://52.188.8.54/readEvents";
     xhr1.onreadystatechange = function () {
         console.log(xhr1.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -195,7 +195,7 @@ function send_info(reim_id) {
 
 // NEEED TOOOO CHANGE THIS WHEN DEPLOYING TO AZURE
 function redirect_form(){
-    window.location.replace("http://localhost:9094/newRequest");
+    window.location.replace("http://52.188.8.54/newRequest");
 }
 function create_options_row(reim_id){
     

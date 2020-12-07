@@ -5,7 +5,7 @@ window.onload = function(){
     let reimbursementId = param[1];
 
     let form=document.getElementById("upload");
-    form.action = "http://localhost:9094/uploadFile/" +  reimbursementId;
+    form.action = "http://52.188.8.54/uploadFile/" +  reimbursementId;
 }
     
 

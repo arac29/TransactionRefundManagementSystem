@@ -7,7 +7,7 @@ window.onload = function(){
     console.log(parameters);
 
     let xhr = new XMLHttpRequest();
-    const url = "http://localhost:9094/readEventById/" + eventId;
+    const url = "http://52.188.8.54/readEventById/" + eventId;
     xhr.onreadystatechange = function () {
         console.log(xhr.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -32,7 +32,7 @@ window.onload = function(){
             format.value=event.amountRequested;
 
             let form=document.getElementById("updateEvent");
-            form.action = "http://localhost:9094/updateEvent/" +  eventId;
+            form.action = "http://52.188.8.54/updateEvent/" +  eventId;
             //neeeed tooo implementtttttt the update in JAVA
 
         }

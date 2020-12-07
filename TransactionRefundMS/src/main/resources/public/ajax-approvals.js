@@ -28,7 +28,7 @@ function getReimbReportsTo(){
     
 
     let xhr = new XMLHttpRequest();
-    const url = "http://localhost:9094/reimbursementsReportsTo";
+    const url = "http://52.188.8.54/reimbursementsReportsTo";
     xhr.onreadystatechange = function () {
         console.log(xhr.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -68,5 +68,5 @@ function getReimbReportsTo(){
     xhr.send();
 }
 function redirect_form(){
-    window.location.replace("http://localhost:9094/newRequest");
+    window.location.replace("http://52.188.8.54/newRequest");
 }

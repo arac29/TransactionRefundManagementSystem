@@ -1,7 +1,7 @@
 window.onload = function(){
 /**GET OTHER EMPL REQUESTS */
     let xhr = new XMLHttpRequest();
-    const url = "http://localhost:9094/reimbursementsReportsTo";
+    const url = "http://52.188.8.54/reimbursementsReportsTo";
     xhr.onreadystatechange = function () {
         console.log(xhr.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -106,7 +106,7 @@ window.onload = function(){
 
     /** ************************Read employees Events ********** */
     let xhr4 = new XMLHttpRequest();
-    const url4 = "http://localhost:9094/eventsReportsTo";
+    const url4 = "http://52.188.8.54/eventsReportsTo";
     xhr4.onreadystatechange = function () {
         console.log(xhr4.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -171,7 +171,7 @@ window.onload = function(){
     xhr4.send();
     /**   ******************** get MY requests ************************/
     let xhr1 = new XMLHttpRequest();
-    const url1 = "http://localhost:9094/readReimbursements";
+    const url1 = "http://52.188.8.54/readReimbursements";
     xhr1.onreadystatechange = function () {
         console.log(xhr1.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -233,7 +233,7 @@ window.onload = function(){
     xhr1.send();
 
     let xhr2 = new XMLHttpRequest();
-    const url2 = "http://localhost:9094/readEvents";
+    const url2 = "http://52.188.8.54/readEvents";
     xhr2.onreadystatechange = function () {
         console.log(xhr2.readyState);
         if (this.readyState == 4 && this.status == 200){
@@ -334,5 +334,5 @@ window.onload = function(){
 
 }
 function redirect_form(){
-    window.location.replace("http://localhost:9094/newRequest");
+    window.location.replace("http://52.188.8.54/newRequest");
 }

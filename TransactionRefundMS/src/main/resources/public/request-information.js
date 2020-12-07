@@ -6,6 +6,6 @@ window.onload = function(){
     console.log(parameters);
 
     let form=document.getElementById("add_note");
-    form.action = "http://localhost:9094/updateNote/" +  reimbursementId;
+    form.action = "http://52.188.8.54/updateNote/" +  reimbursementId;
 
 }

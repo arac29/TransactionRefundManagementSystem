@@ -20,7 +20,7 @@
         console.log(parameters);
 
         let xhr = new XMLHttpRequest();
-        const url = "http://localhost:9094/readReimbursementById/" + reimbursementId;
+        const url = "http://52.188.8.54/readReimbursementById/" + reimbursementId;
         xhr.onreadystatechange = function () {
             console.log(xhr.readyState);
             if (this.readyState == 4 && this.status == 200){
@@ -31,7 +31,7 @@
                 cost.value=reimbursement.adjustedAmount;
 
                 let form=document.getElementById("change-amount");
-                form.action = "http://localhost:9094/updateCost/" +  reimbursementId;
+                form.action = "http://52.188.8.54/updateCost/" +  reimbursementId;
                 
 
             }
@@ -57,7 +57,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link btn" href="http://localhost:9094/logout">logout</a>
+        <a class="nav-link btn" href="http://52.188.8.54/logout">logout</a>
         </li>
     </ul>
         
